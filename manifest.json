@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Text Template Manager",
+  "version": "1.0",
+ "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "clipboardWrite"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "icon.png"
+  }
+}

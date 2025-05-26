@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <div class="container">
+    <!-- Folders Section -->
+    <div class="section">
+      <div class="header">
+        <select id="folderSelect" class="custom-select"></select>
+        <div class="actions">
+          <button id="newFolder" class="icon-btn success">
+            <i class="material-icons">create_new_folder</i>
+          </button>
+          <button id="deleteFolder" class="icon-btn danger">
+            <i class="material-icons">delete</i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+   <!-- Templates Section -->
+<div class="section">
+  <div class="header">
+    <select id="templateSelect" class="custom-select"></select>
+    <div class="actions">
+      <button id="newTemplate" class="icon-btn success">
+        <i class="material-icons">add</i>
+      </button>
+      <button id="deleteTemplate" class="icon-btn danger">
+        <i class="material-icons">delete</i>
+      </button>
+    </div>
+  </div>
+</div>
+
+    <!-- Editor Section -->
+    <div class="section">
+      <input type="text" id="templateName" placeholder="Template name">
+      <textarea id="templateContent" rows="6"></textarea>
+      
+      <div class="selectors-section">
+        <div class="selector-header">
+          <h3>Data Selectors:</h3>
+          <button id="addSelector" class="icon-btn success">
+            <i class="material-icons">add</i>
+          </button>
+        </div>
+        <div id="selectorList"></div>
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="action-buttons">
+      <button id="saveTemplate" class="btn primary">
+        <i class="material-icons">save</i>SAVE
+      </button>
+      <button id="autoBuild" class="btn accent">
+        <i class="material-icons">auto_fix_high</i>AUTO BUILD
+      </button>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+</body>
+</html>
